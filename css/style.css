@@ -227,3 +227,19 @@
 }
 
 /* Professions end */
+
+/* Portfolio start */
+.portfolio{
+    width: 1900px;
+    height: 1520px;
+}
+.portfolio-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-content-item img{
+    width: 406.66px;
+    height: 406.66px;
+}
+/* Portfolio end */
