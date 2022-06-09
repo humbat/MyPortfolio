@@ -1,0 +1,183 @@
+/* Navbar start */
+
+.container{
+    width: 1900px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.logo img{
+    width: 70px;
+    height: 35px;
+    margin-left: 295px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+.navbar{
+    text-align: center;
+}
+
+
+.navbar-menu{
+    width: 600px;
+    margin-left: 135px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.navbar-item{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar-item span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 40;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    
+}
+
+.navbar-item>span .first{
+    transform: translate(100%);
+  
+}
+
+
+.navbar-item:hover .first{
+    transform: translateY(0);
+
+ 
+}
+
+.navbar-item:hover .second{
+    transform: translateY(-100%);
+ 
+}
+
+/* Navbar End */
+
+/* Home page start */
+
+.home{
+    width: 1900px;
+    height: 860px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.right-part{
+    height: 860px;
+    background-image: url("https://waxon.ibthemespro.com/img/1.e2188c89.jpg");
+    background-size: cover;
+    background-position: 50%;
+    
+
+}
+.left-part{
+    height: inherit;
+    background-color: rgb(253, 253, 253);
+    position: relative;
+    
+}
+.content{
+    position: absolute;
+    margin-left: 296px;
+    margin-top: 267px;
+
+}
+
+.left-part>.content .surname{
+    -webkit-text-stroke: 1px #000;
+    color: transparent ;
+    font-family: Poppins,sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.left-part>.content .name{
+    color: #000;
+    font-size: 120px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 0px;
+    font-family: Poppins,sans-serif;
+}
+.left-part>.content .pofession{
+    font-style: italic;
+    font-family: Montserrat;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+/* Home page end */
+
+/* About Page Start */
+
+.about{
+    width: 1320px;
+    height: 479px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 290px;
+    margin-top: 230px;
+    
+}
+
+
+.about-left-part{
+    width: 528px;
+    height: 479px;
+
+}
+
+.about-left-part img{
+    width: 528px;
+    height: 479px;
+    vertical-align: middle;
+}
+
+.about-right-part{
+    width: 792px;
+    height: 415px;
+    padding-left: 80px;
+    position: relative;
+    
+}
+
+.title-about{
+    font-family: Montserrat;
+    color: transparent;
+    font-size: 150px;
+    font-weight: 900;
+    opacity: .1;
+    line-height: 0;
+    -webkit-text-stroke: 1px #000;
+    text-transform: uppercase;
+    position: absolute;
+    padding-top: 50px;
+    
+    
+}
+
+.about-right-part button{
+    margin-top: 200px;
+}
+
+.about-right-part h3, p {
+    margin-top: 30px;
+}
+
+/* About Page End */
