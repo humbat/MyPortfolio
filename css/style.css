@@ -232,10 +232,19 @@
 .portfolio{
     width: 1900px;
     height: 1520px;
+    background-color: #f8f9fa;
+}
+.portfolio-title{
+    margin-left: 290px;
+}
+.portfolio-title-features ul{
+    list-style-type: none;
 }
 .portfolio-content{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 290px;
+    margin-right: 290px;
 }
 
 .portfolio-content-item img{
@@ -249,9 +258,20 @@
     width: 1900px;
     height: 1045px;
 }
+.testimonial-header{
+    margin-left: 290px;
+    
+}
 .testimonial-body{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.testimonial-body-left{
+    margin-left: 290px;
+}
+.testimonial-body-right{
+    margin-right: 290px;
 }
 .commenter-comment img{
     width: 50px;
@@ -285,6 +305,7 @@
     height: 990px;
     display: grid;
     justify-content: center;
+    background-color: #f8f9fa;
 }
 .news-body-item a{
     text-decoration: none;
@@ -296,8 +317,10 @@
     height: 304.984px;
 }
 .news-body-item-date{
-    text-decoration: underline;
-    
+   border-bottom: 1px solid lightgray;
+   width: 330px;
+   padding-bottom: 10px;
+   line-height: 30px;
 }
 
 .news-body{
