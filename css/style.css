@@ -303,3 +303,37 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 /* News page end */
+
+/* Contact page start */
+
+.contact{
+    width: 1900px;
+    height: 975px;
+}
+.contact-heading{
+    margin-left: 290px;
+}
+.contact-body{
+    margin-left: 290px;
+    width: 665px;
+    height: 480px;
+    display: grid;
+    grid-template-rows: 3fr 3fr 3fr 6fr 1fr ;
+}
+.contact-body button{
+    width: 215px;
+    height: 60px;
+}
+/* Contact page end */
+
+/* Last information page start */
+.last-info{
+    width: 1900px;
+    height: 240px;
+}
+
+.social-media img{
+    white-space: 17px;
+    height: 17px;
+}
+/* Last information page end */
