@@ -243,3 +243,63 @@
     height: 406.66px;
 }
 /* Portfolio end */
+
+/* Testimonial start */
+.testimonial-page{
+    width: 1900px;
+    height: 1045px;
+}
+.testimonial-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.commenter-comment img{
+    width: 50px;
+    height: 50px;
+}
+
+.commenter-profile img{
+    border-radius: 100%;
+    width: 73px;
+    height: 73px;
+}
+
+.testimonial-body-right :first-child{
+    width: 280px;
+    height: 373.33px;
+}
+.testimonial-body-right :nth-child(2){
+    width: 280px;
+    height: 210px;
+}
+
+.testimonial-body-right :last-child{
+    width: 280px;
+    height: 280px;
+}
+/* Testimonial end */
+
+/* News page sart */
+.news-page{
+    width: 1900px;
+    height: 990px;
+    display: grid;
+    justify-content: center;
+}
+
+.news-body-item img{
+    width: 406.656px;
+    height: 304.984px;
+}
+.news-body-item-date{
+    text-decoration: underline;
+    
+}
+
+.news-body{
+    width: 1320px;
+    height: 485px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* News page end */
