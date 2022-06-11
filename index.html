@@ -10,43 +10,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,500;1,600;1,800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,500;1,600;1,800&family=Mulish:ital,wght@0,200;0,600;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <title>FinalProject</title>
 </head>
 <body>
     <!-- Navbar Start -->
-   <section class="container">
+   <nav class="container">
        <div class="logo">
            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAyCAYAAACqNX6+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDQ2MCwgMjAyMC8wNS8xMi0xNjowNDoxNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjIgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIxRDIyMTg1MTc4QTExRUJCQ0NGQkIyODMwRTdCRUFEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjIxRDIyMTg2MTc4QTExRUJCQ0NGQkIyODMwRTdCRUFEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjFEMjIxODMxNzhBMTFFQkJDQ0ZCQjI4MzBFN0JFQUQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjFEMjIxODQxNzhBMTFFQkJDQ0ZCQjI4MzBFN0JFQUQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5QPzNGAAAEnklEQVR42txbW0gVURTdmZkVZdAbK8v0ihoZZdRHGVGUBEIv6WU+ioqsNCoyCCOIEKTgQh9RkmJqL6SipAf5YxEECRUSRaWmpVZWBJEYpXZOTnARr7NmZs/rLtjcnzl7rX3O3Nln7zNDxItBwgqFdQlr8WNtwpqFLSfnIlnYB2GtA8TxW1iRErOjMUpYu7AewMIdqD9CWDegvUPYJHIJxgjrBIKqd6D2BvBmmkYuw0IwsBsO0lwFal5JLkUOGGC+A7QeA7UeJZejGAw0xUaNKaDGWxQgeAYGHGGDtkhQWwMFEEYruxK1oN9brGuwsCZAV5dNN4upWADeibct1HQX1JRs5UTJ7dtwYaF+bJjyy4FscAKOWxB3AajlCBOf71z6m+ep8kKvQtzux74I+yxsi8VJfrWJi7EW1HCdiS/VZy79zbPkq5AXh4HP9x4lAXLgCcgXY8JiRFucxKeCfNKmaN1pNDIm+R8An+wZBTEuxhCll6bG+4exrfMSnNt5fQdmggPLmIQmgnzVjAtyH+RcwcR3HuQ74M9BOeggk0nwDpCvkIHrFMh1mCm29SDfHTVH9aAjD5PwIpAv1QDHRpCjkimmcJDvm1ILDYgoi/OJliQfq8N3HOj7NWM8r0HOOajDDNDhJaYAwpS7RY2vTWNNFELY2YysxCcyxXLOaN7whzLQ8TamQOaCfDUafD4AfS5jimETyHdTL8E7kCCaKaCtIJ8X8OUFfeUxaY8A+WSRHayXBM0nzYzP3zMgZ9oAPtAt/GVG3W9AzgSjRFkW5xOJxyDnzH7GJoBjXzHqRdtBOVyEpSDhTia+EWCS/6o0Rn0beN+BcfKNkXFMWjeQTYdb6OF/LBMfmuQf+oypAccsYeyUI3xtzC2gf5gOkrcycqZrqK4PgdceZNT3CuScbVbbGk2WVxk5T2vollqZ59C8sZtMRgUoZAcj5yOGxahj1LMZ5LxGFqERFBTPxBeqJHC9i/FL2HiL642PZCE8oKj3SPMMxCwDC7LIhnojnixGug1/23Qdi7HPhryRTTYB7XdxJrY8kFO+MH3ShrxRSTYDzSczmfjiCHs7vVt5zHFghoZHtO1Az+M5ktxYwj91+N/IC2PgfQvyxZFDgJ6fGH3T/bmOHPLUIOcFkGc7OQxoPtlrsv/+rEQnZ5oNhTAr0PN4ra2EXIbCcI9J9UYLORho8vtE+Ld5SYytk8UmNFNjyOFAa4UqwNcEwj6NawIbfR3KxkANJWTtcYNj8kmuip860M9k6j0XQa59wbRBqSCX4R0ZO9K8Ao7f5TNmFTjmosEtfBO5EGg+kXXFkD5j0bON4n54C8Gx+w0UuVHkUmSS9tdiljLUF9Wk/eQQfcxmkcuBnsevEzaUet88V7v2p0oFHqK0MdT8dCr/ziSDjzrXAalP5OcJaGt7PsCJHhHI3RnyQkVAffSJnsdrTeJqWMPI66EAQwbDpJzVwVvAwJtBAYpyA5NSa4D3ngHeUgpwNOiYFJlfRhrgDAKTvJmfXDgWHh0Tk2gTb6TVkxNsw4LIj1lkW/uEynWy+ditXFfLxCsrea/yj+lR4c23Y2f1V4ABAPjOdVjmAj3EAAAAAElFTkSuQmCC" alt="">
        </div>
        <div class="navbar">
            <div class="navbar-menu">
                <div class="navbar-item">
-                   <span class="first">Home</span> <br>
+                   <span class="first">Home</span>
                    <span class="second">Home</span>
                </div>
                <div class="navbar-item">
-                   <span class="first">About</span> <br>
+                   <span class="first">About</span>
                    <span class="second">About</span>
                </div>
                <div class="navbar-item">
-                   <span class="first">Portfolio</span> <br>
+                   <span class="first">Portfolio</span>
                    <span class="second">Portfolio</span>
                </div>
                <div class="navbar-item">
-                   <span class="first">Testimonail</span> <br>
+                   <span class="first">Testimonail</span>
                    <span class="second">Testimonail</span>
                </div>
                <div class="navbar-item">
-                   <span class="first">News</span> <br>
+                   <span class="first">News</span>
                    <span class="second">News</span>
                </div>
                <div class="navbar-item">
-                   <span class="first">Contact</span> <br>
+                   <span class="first">Contact</span>
                    <span class="second">Contact</span>
                </div>
            </div>
        </div>
-   </section>
+    </nav>
     <!-- Navbar End -->
     <!-- Home Page Start -->
     <section class="home">
@@ -254,12 +257,30 @@
                 <span>+994 055 710 64 54</span>
             </div>
             <div class="social-media">
-                <img src="https://waxon.ibthemespro.com/img/facebook.ab92ad6d.svg" alt="">
-                <img src="https://waxon.ibthemespro.com/img/twitter.7e145c9e.svg" alt="">
-                <img src="https://waxon.ibthemespro.com/img/instagram.2682a0c7.svg" alt="">
-                <img src="https://waxon.ibthemespro.com/img/soundcloud.609fc21a.svg" alt="">
-                <img src="https://waxon.ibthemespro.com/img/youtube.0f519090.svg" alt="">
-                <img src="https://waxon.ibthemespro.com/img/vk.ce6a386d.svg" alt="">
+                <div class="social-media-image">
+                    <img class="first-image" src="https://waxon.ibthemespro.com/img/facebook.ab92ad6d.svg" alt="">
+                    <img class="second-image" src="https://waxon.ibthemespro.com/img/facebook.ab92ad6d.svg" alt="">
+                </div>
+                <div class="social-media-image">
+                    <img class="first-image" src="https://waxon.ibthemespro.com/img/twitter.7e145c9e.svg" alt="">
+                    <img class="second-image" src="https://waxon.ibthemespro.com/img/twitter.7e145c9e.svg" alt="">
+                </div>
+                <div class="social-media-image">
+                    <img class="first-image" src="https://waxon.ibthemespro.com/img/instagram.2682a0c7.svg" alt="">
+                    <img class="second-image" src="https://waxon.ibthemespro.com/img/instagram.2682a0c7.svg" alt="">
+                </div>
+                <div class="social-media-image">
+                    <img class="first-image" src="https://waxon.ibthemespro.com/img/soundcloud.609fc21a.svg" alt="">
+                    <img class="second-image" src="https://waxon.ibthemespro.com/img/soundcloud.609fc21a.svg" alt="">
+                </div>
+                <div class="social-media-image">
+                    <img class="first-image" src="https://waxon.ibthemespro.com/img/youtube.0f519090.svg" alt="">
+                    <img class="second-image" src="https://waxon.ibthemespro.com/img/youtube.0f519090.svg" alt="">
+                </div>
+                <div class="social-media-image">
+                    <img class="first-image" src="https://waxon.ibthemespro.com/img/vk.ce6a386d.svg" alt="">
+                    <img class="second-image" src="https://waxon.ibthemespro.com/img/vk.ce6a386d.svg" alt="">
+                </div>
             </div>
         </div>
     </section>

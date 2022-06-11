@@ -1,14 +1,14 @@
 /* Navbar start */
 
-.container{
+.container {
     width: 1900px;
     height: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
+
 }
 
-.logo img{
+.logo img {
     width: 70px;
     height: 35px;
     margin-left: 295px;
@@ -18,160 +18,167 @@
 
 }
 
-.navbar{
+.navbar {
     text-align: center;
 }
 
 
-.navbar-menu{
-    width: 600px;
+.navbar-menu {
     margin-left: 135px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
 }
 
-.navbar-item{
+.navbar-item {
+    margin-right: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 50px;
     position: relative;
     overflow: hidden;
+    height: 30px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
 }
 
-.navbar-item span{
+.navbar-item span {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     transition: all 0.3s ease;
     cursor: pointer;
-    position: absolute;
-    
 }
 
-.navbar-item>span .first{
-    transform: translate(100%);
-  
-}
-
-
-.navbar-item:hover .first{
+.navbar-item .first {
     transform: translateY(0);
-
- 
+    /* position: absolute; */
 }
 
-.navbar-item:hover .second{
+.navbar-item .second {
+    position: relative;
+    transform: translateY(100%);
+}
+
+
+.navbar-item:hover .first {
     transform: translateY(-100%);
- 
+}
+
+.navbar-item:hover .second {
+    transform: translateY(-100%);
 }
 
 /* Navbar End */
 
 /* Home page start */
 
-.home{
+.home {
     width: 1900px;
     height: 860px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-.right-part{
+.right-part {
     height: 860px;
     background-image: url("https://waxon.ibthemespro.com/img/1.e2188c89.jpg");
     background-size: cover;
     background-position: 50%;
-    
+
 
 }
-.left-part{
+
+.left-part {
     height: inherit;
     background-color: rgb(253, 253, 253);
     position: relative;
-    
+
 }
-.content{
+
+.content {
     position: absolute;
     margin-left: 296px;
     margin-top: 267px;
 
 }
 
-.left-part>.content .surname{
+.left-part>.content .surname {
     -webkit-text-stroke: 1px #000;
-    color: transparent ;
-    font-family: Poppins,sans-serif;
+    color: transparent;
+    font-family: Poppins, sans-serif;
     font-size: 120px;
     font-weight: 900;
     text-transform: uppercase;
     margin: 0px;
 }
 
-.left-part>.content .name{
+.left-part>.content .name {
     color: #000;
     font-size: 120px;
     font-weight: 900;
     text-transform: uppercase;
     line-height: 1.1;
     margin: 0px;
-    font-family: Poppins,sans-serif;
+    font-family: Poppins, sans-serif;
 }
-.left-part>.content .pofession{
+
+.left-part>.content span {
     font-style: italic;
     font-family: Montserrat;
     font-weight: 600;
     padding-top: 20px;
+    margin-left: 10px;
 }
 
 /* Home page end */
 
 /* About Page Start */
 
-.about{
+.about {
     width: 1320px;
     height: 479px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-left: 290px;
     margin-top: 230px;
-    
+
 }
 
 
-.about-left-part{
+.about-left-part {
     width: 528px;
     height: 479px;
 
 }
 
-.about-left-part img{
+.about-left-part img {
     width: 528px;
     height: 479px;
     vertical-align: middle;
 }
 
-.about-right-part{
+.about-right-part {
     width: 715px;
     height: 415px;
     padding-left: 80px;
     position: relative;
-    
+
 }
-.about-right-part div{
-    border-bottom: 1px solid rgba(0,0,0,.1);
+
+.about-right-part div {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
     padding-bottom: 35px;
 }
 
-.about-right-part>div .title-name{
+.about-right-part>div .title-name {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 35px;
     color: #000;
     font-family: 'Montserrat', sans-serif;
-    
-    
+
+
 }
 
-.title-about{
+.title-about {
     font-family: Montserrat;
     color: transparent;
     font-size: 150px;
@@ -182,11 +189,11 @@
     text-transform: uppercase;
     position: absolute;
     padding-top: 50px;
-    
-    
+
+
 }
 
-.about-right-part button{
+.about-right-part button {
     width: 185px;
     height: 60px;
     margin-top: 37px;
@@ -200,30 +207,32 @@
     transition: all .3s ease;
 }
 
-.about-right-part button:hover{
+.about-right-part button:hover {
     background-color: transparent;
     color: #000;
 }
 
-.about-right-part h3, .about-right-part p {
+.about-right-part h3,
+.about-right-part p {
     margin-top: 30px;
 }
 
-.about-right-part p{
+.about-right-part p {
     margin-bottom: 13px;
-   
     font-style: italic;
 }
 
 /* About Page End */
 
 /* Professions start */
-.professions{
+.professions {
     width: 1900px;
     height: 245px;
-    
+    font-style: italic;
+
 }
-.skills{
+
+.skills {
     width: 1300px;
     height: 130px;
     display: grid;
@@ -233,40 +242,51 @@
     cursor: e-resize;
 }
 
-.web-development{
+.skills p {
+    width: 321px;
+}
+
+.web-development {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    
+
 }
-.web-development-text h3{
+
+.web-development-text h3 {
     margin-bottom: 16px;
 }
-.web-development img{
+
+.web-development img {
     width: 50px;
     height: 50px;
 }
 
-.creative-design{
+.creative-design {
     display: grid;
     grid-template-columns: 1fr 5fr;
-   
+
 }
-.creative-design-text h3{
+
+.creative-design-text h3 {
     margin-bottom: 16px;
 }
-.creative-design img{
+
+.creative-design img {
     width: 50px;
     height: 50px;
 }
-.brand-identity{
+
+.brand-identity {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    
+
 }
-.brand-identity-text h3{
+
+.brand-identity-text h3 {
     margin-bottom: 16px;
 }
-.brand-identity img{
+
+.brand-identity img {
     width: 50px;
     height: 50px;
 }
@@ -274,118 +294,188 @@
 /* Professions end */
 
 /* Portfolio start */
-.portfolio{
+.portfolio {
     width: 1900px;
     height: 1520px;
     background-color: #f8f9fa;
 }
-.portfolio-title{
+
+.portfolio-title {
     margin-left: 290px;
 }
-.portfolio-title-features ul{
+
+.portfolio-title-features ul {
     list-style-type: none;
 }
-.portfolio-content{
+
+.portfolio-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-left: 290px;
     margin-right: 290px;
 }
 
-.portfolio-content-item img{
+.portfolio-content-item img {
     width: 406.66px;
     height: 406.66px;
 }
+
 /* Portfolio end */
 
 /* Testimonial start */
-.testimonial-page{
+.testimonial-page {
     width: 1900px;
     height: 1045px;
 }
-.testimonial-header{
+
+.testimonial-header {
     margin-left: 290px;
-    
+
 }
-.testimonial-body{
+
+.testimonial-body {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.testimonial-body-left{
+.testimonial-body-left {
     margin-left: 290px;
 }
-.testimonial-body-right{
+
+.testimonial-body-right {
     margin-right: 290px;
 }
-.commenter-comment img{
+
+.commenter-comment img {
     width: 50px;
     height: 50px;
 }
 
-.commenter-profile img{
+.commenter-profile img {
     border-radius: 100%;
     width: 73px;
     height: 73px;
 }
 
-.testimonial-body-right :first-child{
+.testimonial-body-right :first-child {
     width: 280px;
     height: 373.33px;
 }
-.testimonial-body-right :nth-child(2){
+
+.testimonial-body-right :nth-child(2) {
     width: 280px;
     height: 210px;
 }
 
-.testimonial-body-right :last-child{
+.testimonial-body-right :last-child {
     width: 280px;
     height: 280px;
 }
+
 /* Testimonial end */
 
 /* News page sart */
-.news-page{
+.news-page {
     width: 1900px;
     height: 990px;
     display: grid;
     justify-content: center;
     background-color: #f8f9fa;
 }
-.news-body-item a{
+
+.news-headline span {
+    margin-top: 140px;
+    font-family: Montserrat;
+    color: transparent;
+    font-size: 150px;
+    font-weight: 900;
+    opacity: .1;
+    -webkit-text-stroke: 1px #000;
+    text-transform: uppercase;
+    position: absolute;
+    padding-top: 50px;
+    margin-left: -10px;
+
+}
+
+.news-headline h3 {
+    position: absolute;
+    margin-top: 220px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.news-body-item {
+    width: 405px;
+    background-color: white;
+    box-shadow: 0 0 20pxrgba(0, 0, 0, .07);
+}
+
+.news-body-item:hover img {
+	transform: scale(1.1) translateZ(0);
+}
+
+
+.news-body-item a {
     text-decoration: none;
     color: #000;
 }
 
-.news-body-item img{
+.news-body-item img {
     width: 406.656px;
     height: 304.984px;
-}
-.news-body-item-date{
-   border-bottom: 1px solid lightgray;
-   width: 330px;
-   padding-bottom: 10px;
-   line-height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    
 }
 
-.news-body{
+.news-body-item-date {
+    border-bottom: 1px solid lightgray;
+    width: 330px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.news-body-item-text {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 50px;
+    color: #000;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.news-body {
     width: 1320px;
     height: 485px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 235px;
 }
+
 /* News page end */
 
 /* Contact page start */
 
-.contact{
+.contact {
     width: 1900px;
     height: 975px;
 }
-.contact-heading{
+
+.contact-heading {
     margin-left: 290px;
 }
-.contact-heading span{
+
+.contact-heading span {
     margin-top: 155px;
     font-family: Montserrat;
     color: transparent;
@@ -398,7 +488,8 @@
     position: absolute;
     padding-top: 50px;
 }
-.contact-heading h3{
+
+.contact-heading h3 {
     position: absolute;
     margin-top: 215px;
     margin-left: 5px;
@@ -406,31 +497,36 @@
     font-weight: 900;
     font-size: 35px;
 }
-.contact-body{
+
+.contact-body {
     margin-top: 360px;
     margin-left: 290px;
     width: 665px;
     height: 480px;
     display: grid;
-    grid-template-rows: 3fr 3fr 3fr 5fr 1fr ;
+    grid-template-rows: 3fr 3fr 3fr 5fr 1fr;
     position: absolute;
     font-style: italic;
 }
-.contact-body :nth-child(2){
+
+.contact-body :nth-child(2) {
     border: .5px solid lightgray;
     height: fit-content;
     padding: 5px;
 }
-.contact-body :nth-child(3){
+
+.contact-body :nth-child(3) {
     border: .5px solid lightgray;
     height: fit-content;
     padding: 5px;
 }
-.contact-body :nth-child(4){
+
+.contact-body :nth-child(4) {
     border: .5px solid lightgray;
     padding: 5px;
 }
-.contact-body button{
+
+.contact-body button {
     margin-top: 35px;
     width: 215px;
     height: 60px;
@@ -443,45 +539,78 @@
     font-style: italic;
     transition: all .3s ease;
 }
+
 .contact-body button:hover {
     background-color: transparent;
     color: #000;
 }
+
 /* Contact page end */
 
 /* Last information page start */
-.last-info{
+.last-info {
     width: 1900px;
     height: 240px;
     background-color: #000;
     display: grid;
     justify-content: center;
 }
-.last-info-container{
+
+.last-info-container {
     width: 1320px;
     height: inherit;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.rights, .location, .phone-number, .social-media{
+
+.rights,
+.location,
+.phone-number,
+.social-media {
     color: white;
     margin-top: 100px;
     line-height: 30px;
-    
+
 }
 
-.rights a{
+.rights a {
     text-decoration: none;
     color: white;
     cursor: pointer;
 }
-
-.social-media img{
+.social-media{
+    display: flex;
+    height: 30px;
+}
+.social-media-image{
+    position: relative;
+    overflow: hidden;
+    height: 30px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+}
+.first-image{
+    transform: translateY(0);
+}
+.second-image{
+    position: relative;
+    transform: translateY(100%);
+}
+.social-media img {
     width: 17px;
-    height: 17px;
     color: white;
     filter: invert(1);
     margin-right: 20px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-media-image:hover .first-image{
+    transform: translateY(-100%);
+}
+
+.social-media-image:hover .second-image{
+    transform: translateY(-100%);
 }
 /* Last information page end */
