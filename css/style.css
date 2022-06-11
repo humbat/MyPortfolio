@@ -40,7 +40,7 @@
 
 .navbar-item span{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 40;
+    font-weight: 600;
     transition: all 0.3s ease;
     cursor: pointer;
     position: absolute;
@@ -150,10 +150,24 @@
 }
 
 .about-right-part{
-    width: 792px;
+    width: 715px;
     height: 415px;
     padding-left: 80px;
     position: relative;
+    
+}
+.about-right-part div{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding-bottom: 35px;
+}
+
+.about-right-part>div .title-name{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 35px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    
     
 }
 
@@ -173,11 +187,32 @@
 }
 
 .about-right-part button{
-    margin-top: 200px;
+    width: 185px;
+    height: 60px;
+    margin-top: 37px;
+    letter-spacing: .5px;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #000;
+    font-style: italic;
+    transition: all .3s ease;
+}
+
+.about-right-part button:hover{
+    background-color: transparent;
+    color: #000;
 }
 
 .about-right-part h3, p {
     margin-top: 30px;
+}
+
+.about-right-part p{
+    margin-bottom: 13px;
+   
+    font-style: italic;
 }
 
 /* About Page End */
