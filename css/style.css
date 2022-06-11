@@ -385,16 +385,67 @@
 .contact-heading{
     margin-left: 290px;
 }
+.contact-heading span{
+    margin-top: 155px;
+    font-family: Montserrat;
+    color: transparent;
+    font-size: 150px;
+    font-weight: 900;
+    opacity: .1;
+    line-height: 0;
+    -webkit-text-stroke: 1px #000;
+    text-transform: uppercase;
+    position: absolute;
+    padding-top: 50px;
+}
+.contact-heading h3{
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 35px;
+}
 .contact-body{
+    margin-top: 360px;
     margin-left: 290px;
     width: 665px;
     height: 480px;
     display: grid;
-    grid-template-rows: 3fr 3fr 3fr 6fr 1fr ;
+    grid-template-rows: 3fr 3fr 3fr 5fr 1fr ;
+    position: absolute;
+    font-style: italic;
+}
+.contact-body :nth-child(2){
+    border: .5px solid lightgray;
+    height: fit-content;
+    padding: 5px;
+}
+.contact-body :nth-child(3){
+    border: .5px solid lightgray;
+    height: fit-content;
+    padding: 5px;
+}
+.contact-body :nth-child(4){
+    border: .5px solid lightgray;
+    padding: 5px;
 }
 .contact-body button{
+    margin-top: 35px;
     width: 215px;
     height: 60px;
+    letter-spacing: .5px;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #000;
+    font-style: italic;
+    transition: all .3s ease;
+}
+.contact-body button:hover {
+    background-color: transparent;
+    color: #000;
 }
 /* Contact page end */
 
