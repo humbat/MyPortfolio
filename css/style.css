@@ -532,6 +532,7 @@
     width: 280px;
     height: 210px;
     padding-left: 50px;
+    opacity: 0.5;
 }
 
 .testimonial-body-right :last-child {
@@ -541,6 +542,7 @@
     margin-left: 330px;
     margin-top: 260px;
     padding-left: 50px;
+    opacity: 0.5;
 }
 
 /* Testimonial end */
