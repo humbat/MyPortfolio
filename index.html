@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,47 +10,53 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://kit.fontawesome.com/6dde141433.js" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,500;1,600;1,800&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,500;1,600;1,800&family=Mulish:ital,wght@0,200;0,600;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,500;1,600;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,500;1,600;1,800&family=Mulish:ital,wght@0,200;0,600;0,900;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
     <title>FinalProject</title>
 </head>
+
 <body>
     <!-- Navbar Start -->
-   <nav class="container">
-       <div class="logo">
-           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAyCAYAAACqNX6+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDQ2MCwgMjAyMC8wNS8xMi0xNjowNDoxNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjIgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIxRDIyMTg1MTc4QTExRUJCQ0NGQkIyODMwRTdCRUFEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjIxRDIyMTg2MTc4QTExRUJCQ0NGQkIyODMwRTdCRUFEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjFEMjIxODMxNzhBMTFFQkJDQ0ZCQjI4MzBFN0JFQUQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjFEMjIxODQxNzhBMTFFQkJDQ0ZCQjI4MzBFN0JFQUQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5QPzNGAAAEnklEQVR42txbW0gVURTdmZkVZdAbK8v0ihoZZdRHGVGUBEIv6WU+ioqsNCoyCCOIEKTgQh9RkmJqL6SipAf5YxEECRUSRaWmpVZWBJEYpXZOTnARr7NmZs/rLtjcnzl7rX3O3Nln7zNDxItBwgqFdQlr8WNtwpqFLSfnIlnYB2GtA8TxW1iRErOjMUpYu7AewMIdqD9CWDegvUPYJHIJxgjrBIKqd6D2BvBmmkYuw0IwsBsO0lwFal5JLkUOGGC+A7QeA7UeJZejGAw0xUaNKaDGWxQgeAYGHGGDtkhQWwMFEEYruxK1oN9brGuwsCZAV5dNN4upWADeibct1HQX1JRs5UTJ7dtwYaF+bJjyy4FscAKOWxB3AajlCBOf71z6m+ep8kKvQtzux74I+yxsi8VJfrWJi7EW1HCdiS/VZy79zbPkq5AXh4HP9x4lAXLgCcgXY8JiRFucxKeCfNKmaN1pNDIm+R8An+wZBTEuxhCll6bG+4exrfMSnNt5fQdmggPLmIQmgnzVjAtyH+RcwcR3HuQ74M9BOeggk0nwDpCvkIHrFMh1mCm29SDfHTVH9aAjD5PwIpAv1QDHRpCjkimmcJDvm1ILDYgoi/OJliQfq8N3HOj7NWM8r0HOOajDDNDhJaYAwpS7RY2vTWNNFELY2YysxCcyxXLOaN7whzLQ8TamQOaCfDUafD4AfS5jimETyHdTL8E7kCCaKaCtIJ8X8OUFfeUxaY8A+WSRHayXBM0nzYzP3zMgZ9oAPtAt/GVG3W9AzgSjRFkW5xOJxyDnzH7GJoBjXzHqRdtBOVyEpSDhTia+EWCS/6o0Rn0beN+BcfKNkXFMWjeQTYdb6OF/LBMfmuQf+oypAccsYeyUI3xtzC2gf5gOkrcycqZrqK4PgdceZNT3CuScbVbbGk2WVxk5T2vollqZ59C8sZtMRgUoZAcj5yOGxahj1LMZ5LxGFqERFBTPxBeqJHC9i/FL2HiL642PZCE8oKj3SPMMxCwDC7LIhnojnixGug1/23Qdi7HPhryRTTYB7XdxJrY8kFO+MH3ShrxRSTYDzSczmfjiCHs7vVt5zHFghoZHtO1Az+M5ktxYwj91+N/IC2PgfQvyxZFDgJ6fGH3T/bmOHPLUIOcFkGc7OQxoPtlrsv/+rEQnZ5oNhTAr0PN4ra2EXIbCcI9J9UYLORho8vtE+Ld5SYytk8UmNFNjyOFAa4UqwNcEwj6NawIbfR3KxkANJWTtcYNj8kmuip860M9k6j0XQa59wbRBqSCX4R0ZO9K8Ao7f5TNmFTjmosEtfBO5EGg+kXXFkD5j0bON4n54C8Gx+w0UuVHkUmSS9tdiljLUF9Wk/eQQfcxmkcuBnsevEzaUet88V7v2p0oFHqK0MdT8dCr/ziSDjzrXAalP5OcJaGt7PsCJHhHI3RnyQkVAffSJnsdrTeJqWMPI66EAQwbDpJzVwVvAwJtBAYpyA5NSa4D3ngHeUgpwNOiYFJlfRhrgDAKTvJmfXDgWHh0Tk2gTb6TVkxNsw4LIj1lkW/uEynWy+ditXFfLxCsrea/yj+lR4c23Y2f1V4ABAPjOdVjmAj3EAAAAAElFTkSuQmCC" alt="">
-       </div>
-       <div class="navbar">
-           <div class="navbar-menu">
-               <div class="navbar-item">
-                   <span class="first">Home</span>
-                   <span class="second">Home</span>
-               </div>
-               <div class="navbar-item">
-                   <span class="first">About</span>
-                   <span class="second">About</span>
-               </div>
-               <div class="navbar-item">
-                   <span class="first">Portfolio</span>
-                   <span class="second">Portfolio</span>
-               </div>
-               <div class="navbar-item">
-                   <span class="first">Testimonail</span>
-                   <span class="second">Testimonail</span>
-               </div>
-               <div class="navbar-item">
-                   <span class="first">News</span>
-                   <span class="second">News</span>
-               </div>
-               <div class="navbar-item">
-                   <span class="first">Contact</span>
-                   <span class="second">Contact</span>
-               </div>
-           </div>
-       </div>
+    <nav class="container">
+        <div class="logo">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAyCAYAAACqNX6+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDQ2MCwgMjAyMC8wNS8xMi0xNjowNDoxNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjIgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIxRDIyMTg1MTc4QTExRUJCQ0NGQkIyODMwRTdCRUFEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjIxRDIyMTg2MTc4QTExRUJCQ0NGQkIyODMwRTdCRUFEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjFEMjIxODMxNzhBMTFFQkJDQ0ZCQjI4MzBFN0JFQUQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjFEMjIxODQxNzhBMTFFQkJDQ0ZCQjI4MzBFN0JFQUQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5QPzNGAAAEnklEQVR42txbW0gVURTdmZkVZdAbK8v0ihoZZdRHGVGUBEIv6WU+ioqsNCoyCCOIEKTgQh9RkmJqL6SipAf5YxEECRUSRaWmpVZWBJEYpXZOTnARr7NmZs/rLtjcnzl7rX3O3Nln7zNDxItBwgqFdQlr8WNtwpqFLSfnIlnYB2GtA8TxW1iRErOjMUpYu7AewMIdqD9CWDegvUPYJHIJxgjrBIKqd6D2BvBmmkYuw0IwsBsO0lwFal5JLkUOGGC+A7QeA7UeJZejGAw0xUaNKaDGWxQgeAYGHGGDtkhQWwMFEEYruxK1oN9brGuwsCZAV5dNN4upWADeibct1HQX1JRs5UTJ7dtwYaF+bJjyy4FscAKOWxB3AajlCBOf71z6m+ep8kKvQtzux74I+yxsi8VJfrWJi7EW1HCdiS/VZy79zbPkq5AXh4HP9x4lAXLgCcgXY8JiRFucxKeCfNKmaN1pNDIm+R8An+wZBTEuxhCll6bG+4exrfMSnNt5fQdmggPLmIQmgnzVjAtyH+RcwcR3HuQ74M9BOeggk0nwDpCvkIHrFMh1mCm29SDfHTVH9aAjD5PwIpAv1QDHRpCjkimmcJDvm1ILDYgoi/OJliQfq8N3HOj7NWM8r0HOOajDDNDhJaYAwpS7RY2vTWNNFELY2YysxCcyxXLOaN7whzLQ8TamQOaCfDUafD4AfS5jimETyHdTL8E7kCCaKaCtIJ8X8OUFfeUxaY8A+WSRHayXBM0nzYzP3zMgZ9oAPtAt/GVG3W9AzgSjRFkW5xOJxyDnzH7GJoBjXzHqRdtBOVyEpSDhTia+EWCS/6o0Rn0beN+BcfKNkXFMWjeQTYdb6OF/LBMfmuQf+oypAccsYeyUI3xtzC2gf5gOkrcycqZrqK4PgdceZNT3CuScbVbbGk2WVxk5T2vollqZ59C8sZtMRgUoZAcj5yOGxahj1LMZ5LxGFqERFBTPxBeqJHC9i/FL2HiL642PZCE8oKj3SPMMxCwDC7LIhnojnixGug1/23Qdi7HPhryRTTYB7XdxJrY8kFO+MH3ShrxRSTYDzSczmfjiCHs7vVt5zHFghoZHtO1Az+M5ktxYwj91+N/IC2PgfQvyxZFDgJ6fGH3T/bmOHPLUIOcFkGc7OQxoPtlrsv/+rEQnZ5oNhTAr0PN4ra2EXIbCcI9J9UYLORho8vtE+Ld5SYytk8UmNFNjyOFAa4UqwNcEwj6NawIbfR3KxkANJWTtcYNj8kmuip860M9k6j0XQa59wbRBqSCX4R0ZO9K8Ao7f5TNmFTjmosEtfBO5EGg+kXXFkD5j0bON4n54C8Gx+w0UuVHkUmSS9tdiljLUF9Wk/eQQfcxmkcuBnsevEzaUet88V7v2p0oFHqK0MdT8dCr/ziSDjzrXAalP5OcJaGt7PsCJHhHI3RnyQkVAffSJnsdrTeJqWMPI66EAQwbDpJzVwVvAwJtBAYpyA5NSa4D3ngHeUgpwNOiYFJlfRhrgDAKTvJmfXDgWHh0Tk2gTb6TVkxNsw4LIj1lkW/uEynWy+ditXFfLxCsrea/yj+lR4c23Y2f1V4ABAPjOdVjmAj3EAAAAAElFTkSuQmCC"
+                alt="">
+        </div>
+        <div class="navbar">
+            <div class="navbar-menu">
+                <div class="navbar-item">
+                    <span class="first">Home</span>
+                    <span class="second">Home</span>
+                </div>
+                <div class="navbar-item">
+                    <span class="first">About</span>
+                    <span class="second">About</span>
+                </div>
+                <div class="navbar-item">
+                    <span class="first">Portfolio</span>
+                    <span class="second">Portfolio</span>
+                </div>
+                <div class="navbar-item">
+                    <span class="first">Testimonail</span>
+                    <span class="second">Testimonail</span>
+                </div>
+                <div class="navbar-item">
+                    <span class="first">News</span>
+                    <span class="second">News</span>
+                </div>
+                <div class="navbar-item">
+                    <span class="first">Contact</span>
+                    <span class="second">Contact</span>
+                </div>
+            </div>
+        </div>
     </nav>
     <!-- Navbar End -->
     <!-- Home Page Start -->
@@ -71,14 +78,16 @@
         <div class="about-left-part">
             <img src="https://waxon.ibthemespro.com/img/2.ed11aaa2.jpg" alt="">
         </div>
-        <div class="about-right-part"> 
+        <div class="about-right-part">
             <span class="title-about">About</span>
             <div>
                 <h3 class="title-name">Humbatov Humbat</h3>
                 <h3 class="title-profession">Creative Web & App Developer</h3>
             </div>
             <p>My name is Humbatov Humbat. I am a Web Developer, and I'm very passionate and dedicated to my work.</p>
-            <p>With 20 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+            <p>With 20 years experience as a professional Web developer, I have acquired the skills and knowledge
+                necessary to make your project a success. I enjoy every step of the design process, from discussion and
+                collaboration.</p>
             <button>Learn More</button>
         </div>
     </section>
@@ -91,8 +100,8 @@
                 <img src="https://waxon.ibthemespro.com/img/code.cf8a3c11.svg" alt="">
                 <div class="web-development-text">
                     <h3>Web Development</h3>
-                    <p>  Web design is a similar process of creation, with the
-                    intention of the pre outer presenting... </p>
+                    <p> Web design is a similar process of creation, with the
+                        intention of the pre outer presenting... </p>
                 </div>
             </div>
             <div class="creative-design">
@@ -100,15 +109,15 @@
                 <div class="creative-design-text">
                     <h3>Creative Design</h3>
                     <p>Web design is a similar process of creation, with the
-                    intention of the pre outer presenting...</p>
+                        intention of the pre outer presenting...</p>
                 </div>
             </div>
             <div class="brand-identity">
                 <img src="https://waxon.ibthemespro.com/img/telegram.fd9fedea.svg" alt="">
                 <div class="brand-identity-text">
                     <h3>Brand Identity</h3>
-                    <p>  Web design is a similar process of creation, with the
-                    intention of the pre outer presenting... </p>
+                    <p> Web design is a similar process of creation, with the
+                        intention of the pre outer presenting... </p>
                 </div>
             </div>
         </div>
@@ -122,14 +131,13 @@
                 <h3>Featured Works</h3>
             </div>
             <div class="portfolio-title-features">
-                <ul>
-                    <li>All</li>
-                    <li>Vimeo</li>
-                    <li>Youtube</li>
-                    <li>Image</li>
-                </ul>
-                <i class="fa-solid fa-bars"></i> <!--Search for  this part-->
-                
+                <div id="hamburger-container">
+                    <div id="hamburger">
+                        
+                    </div>
+                </div>
+        
+
             </div>
         </div>
         <div class="portfolio-content">
@@ -144,7 +152,7 @@
                 <div class="portfolio-content-item-image">
                     <img src="https://waxon.ibthemespro.com/img/2.9207e75e.jpg" alt="">
                 </div>
-                
+
                 <h3>Fasion Memory</h3>
                 <span>Gallery</span>
             </div>
@@ -152,7 +160,7 @@
                 <div class="portfolio-content-item-image">
                     <img src="https://waxon.ibthemespro.com/img/3.b6b7ad1d.jpg" alt="">
                 </div>
-                
+
                 <h3>Childhood Memory</h3>
                 <span>Gallery</span>
             </div>
@@ -160,7 +168,7 @@
                 <div class="portfolio-content-item-image">
                     <img src="https://waxon.ibthemespro.com/img/4.1af8bc07.jpg" alt="">
                 </div>
-                
+
                 <h3>My Hits</h3>
                 <span>Youtube</span>
             </div>
@@ -168,7 +176,7 @@
                 <div class="portfolio-content-item-image">
                     <img src="https://waxon.ibthemespro.com/img/5.b65523ce.jpg" alt="">
                 </div>
-                
+
                 <h3>University Life</h3>
                 <span>Youtube</span>
             </div>
@@ -176,7 +184,7 @@
                 <div class="portfolio-content-item-image">
                     <img src="https://waxon.ibthemespro.com/img/6.951cc0d8.jpg" alt="">
                 </div>
-                
+
                 <h3>Beautiful Memory</h3>
                 <span>Gallery</span>
             </div>
@@ -194,20 +202,21 @@
         </div>
         <div class="testimonial-body">
             <div class="testimonial-body-left">
-                <div class="commenter-comment"> 
+                <div class="commenter-comment">
                     <img src="https://waxon.ibthemespro.com/img/quote-1.138d345c.svg" alt="">
-                    <p> Good overall template. I am getting back into coding and had a simple question for the author. They responded within 30 minutes and answered my question. Highly recommend. </p>
+                    <p> Good overall template. I am getting back into coding and had a simple question for the author.
+                        They responded within 30 minutes and answered my question. Highly recommend. </p>
                 </div>
                 <div class="commenter-profile">
                     <img src="https://waxon.ibthemespro.com/img/1.48c9a595.jpg" alt="">
-                   <div class="commenter-info">
+                    <div class="commenter-info">
                         <div class="commenter-name">
                             <span>Nelly Furtado</span>
-                        </div> 
+                        </div>
                         <div class="commenter-profession">
                             <span>App Developer</span>
                         </div>
-                   </div>
+                    </div>
                 </div>
             </div>
             <div class="testimonial-body-right">
@@ -231,8 +240,8 @@
                     <img src="https://waxon.ibthemespro.com/img/1.44562211.jpg" alt="">
                 </div>
                 <p class="news-body-item-date">
-                    By <a href="">Alex Watson</a> 
-                       
+                    By <a href="">Alex Watson</a>
+
                     <span>/ 10 May 2021</span>
                 </p>
                 <p class="news-body-item-text"> Developers watch out for these burnout symptoms </p>
@@ -265,7 +274,8 @@
             <h3>Get In Touch</h3>
         </div>
         <div class="contact-body">
-            <p> Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday </p>
+            <p> Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET,
+                Monday through Friday </p>
             <span>name</span>
             <span>email</span>
             <span>message</span>
@@ -317,6 +327,5 @@
     </section>
     <!-- Last information page end -->
 </body>
-</html>
 
-<!-- do not forget to add function{arrow up} navigating to beginning -->
+</html>
