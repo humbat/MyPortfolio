@@ -106,14 +106,14 @@
 /* Home page start */
 
 .home {
-    width: 1900px;
+    width: auto;
     height: 860px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
 .right-part {
-    height: 860px;
+    height: auto;
     background-image: url("https://waxon.ibthemespro.com/img/1.e2188c89.jpg");
     background-size: cover;
     background-position: 50%;
@@ -122,16 +122,15 @@
 }
 
 .left-part {
-    height: inherit;
-    background-color: rgb(253, 253, 253);
+    height: auto;
     position: relative;
 
 }
 
 .content {
     position: absolute;
-    margin-left: 296px;
-    margin-top: 267px;
+    left: 40%;
+    top: 40%;
 
 }
 
