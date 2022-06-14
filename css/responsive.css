@@ -1,0 +1,15 @@
+@media (max-width: 1024px){
+    .container{
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo img{margin-left: 20px;}
+    .navbar-menu{
+        display: none;
+    }
+    .navbar-menu-mobile{
+        display: block;
+    }
+}

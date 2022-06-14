@@ -1,10 +1,11 @@
 /* Navbar start */
 
 .container {
-    width: 1900px;
+    width: auto;
     height: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid lightgray;
 
 }
 
@@ -26,6 +27,40 @@
 .navbar-menu {
     margin-left: 135px;
     display: flex;
+}
+.navbar-menu-mobile{
+    position: relative;
+    display: none;
+    width: 26px;
+    height: 18px;
+    right: 20px;
+    cursor: pointer;
+    
+}
+.navbar-mobile-hamburger{
+    position: absolute;
+    top: 8px;
+    width: 26px;
+    height: 2px;
+    background-color: #000;
+}
+.navbar-mobile-hamburger::before{
+    position: absolute;
+    left: 0;
+    content: "";
+    top: -8px;
+    width: 26px;
+    height: 2px;
+    background-color: #000;
+}
+.navbar-mobile-hamburger::after{
+    position: absolute;
+    left: 0;
+    content: "";
+    top: 8px;
+    width: 26px;
+    height: 2px;
+    background-color: #000;
 }
 
 .navbar-item {
