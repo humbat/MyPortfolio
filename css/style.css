@@ -167,19 +167,20 @@
 /* About Page Start */
 
 .about {
-    width: 1320px;
+    padding-top: 230px;
+    width: auto;
     height: 479px;
+}
+.about-content{
+    max-width: 1400px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-left: 290px;
-    margin-top: 230px;
-
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
 .about-left-part {
-    width: 528px;
-    height: 479px;
 
 }
 
@@ -190,8 +191,8 @@
 }
 
 .about-right-part {
-    width: 715px;
-    height: 415px;
+    width: auto;
+    height: auto;
     padding-left: 80px;
     position: relative;
 
