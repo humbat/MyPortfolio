@@ -41,6 +41,7 @@
 @media (max-width:766px){
     .about{
         padding-top: 120px;
+        height: auto;
     }
     .about-content{
         display: block;
@@ -56,6 +57,7 @@
     }
     .about{
         padding-top: 120px;
+        height: auto;
     }
 }
 
