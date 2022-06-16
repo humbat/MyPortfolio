@@ -38,5 +38,25 @@
 
 /* About mobile start */
 
+@media (max-width:766px){
+    .about{
+        padding-top: 120px;
+    }
+    .about-content{
+        display: block;
+    }
+    .about-right-part .title-about{
+        display: none;
+    }
+}
+
+@media (min-width:767px) and (max-width:1024px){
+    .about-right-part .title-about{
+        display: none;
+    }
+    .about{
+        padding-top: 120px;
+    }
+}
 
 /* About mobile end */
